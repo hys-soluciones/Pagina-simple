@@ -1,0 +1,277 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --primary-color: #0e4e90;
+  --secondary-color: #3eb5e1;
+
+  /* 1A79DB;
+     A6DFF2; */
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+/*   Main Styling   */
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--primary-color);
+  color: #fff;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.7em;
+}
+a {
+  text-decoration: none;
+}
+/*    Utility Classes */
+.container {
+  margin: auto;
+  max-width: 1200px;
+  overflow: auto;
+  padding: 0 20px;
+}
+.large {
+  font-size: 1.25rem;
+}
+.btn {
+  display: inline-block;
+  font-size: 15px;
+  padding: 12px 40px;
+  cursor: pointer;
+  font-weight: bold;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  text-transform: uppercase;
+}
+.btn-dark {
+  background-color: var(--secondary-color);
+  border: none;
+  color: #fff;
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+/* ****************Form**************** */
+form {
+  padding-top: 80px;
+  padding-bottom: 20px;
+  width: 50%;
+  margin: 0 auto;
+}
+form .btn {
+  width: 100%;
+}
+label {
+  display: inline-block;
+  color: #fff;
+  margin-bottom: 6px;
+}
+.form-group {
+  margin-bottom: 16px;
+}
+.form-control {
+  width: 100%;
+  padding: 7px 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 20px;
+}
+/* ***************header************** */
+#main-header {
+  height: 100vh;
+  width: 100%;
+}
+h1 {
+  font-weight: 700;
+  line-height: 1.2em;
+  text-transform: uppercase;
+}
+#navbar {
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#navbar a {
+  color: #fff;
+}
+#navbar .logo {
+  float: left;
+  padding-top: 25px;
+  font-size: 25px;
+  height: 100px;
+}
+#navbar ul {
+  list-style: none;
+  float: right;
+  text-transform: uppercase;
+}
+#navbar ul li {
+  float: left;
+}
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+#showcase {
+  padding: 60px 0;
+}
+.showcase-row {
+  display: flex;
+}
+.showcase-row-txt {
+  padding-right: 60px;
+}
+#showcase.showcase-row-txt p:nth-child(1) {
+  text-transform: uppercase;
+}
+#showcase.showcase-row-txt p:nth-child(2) {
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+.showcase-row-img {
+  margin-top: 0;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+.showcase-row-img img {
+  width: 450px;
+  height: 410px;
+}
+#services {
+  padding: 80px 0;
+}
+#services.container p.large {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+.h2 {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+.services-row {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.services-row-box {
+  padding: 20px;
+}
+.services-row-box img {
+  width: 70%;
+  display: block;
+  margin: 0 auto;
+}
+.services-row-box h4,
+p .row-box {
+  text-align: center;
+}
+#contact {
+  padding: 80px 0;
+}
+#contact h2,
+p.contact-p {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#mainfooter {
+  text-align: center;
+  padding-bottom: 30px;
+}
+/* *************************** */
+@media (max-width: 700px) {
+  #main-header {
+    height: 100%;
+  }
+
+  #navbar {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  #navbar .logo {
+    float: none;
+    text-align: center;
+    padding-top: 20px;
+    height: 100%;
+  }
+  #navbar ul {
+    float: none;
+    padding-left: 160px;
+  }
+
+  #showcase {
+    padding: 20px 0;
+  }
+  .showcase-row {
+    flex-wrap: wrap;
+  }
+  .showcase-row-txt {
+    padding-right: 0px;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+
+  .showcase-row-img {
+    margin: 0 auto;
+    padding-left: 0px;
+    padding-bottom: 30px;
+  }
+  .showcase-row-img img {
+    width: 100%;
+  }
+  #services {
+    padding: 40px 0;
+  }
+  #services.container p.large {
+    width: 100%;
+  }
+
+  .services-row {
+    flex-wrap: wrap;
+    padding-top: 0px;
+  }
+  .services-row-box {
+    padding: 10px;
+  }
+  #contact {
+    padding: 40px 0;
+  }
+  #contact h2,
+  p.contact-p {
+    width: 100%;
+  }
+  form {
+    padding-top: 30px;
+
+    width: 100%;
+  }
+  #mainfooter {
+    text-align: center;
+    padding-bottom: 30px;
+  }
+}
